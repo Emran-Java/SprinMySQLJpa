@@ -228,7 +228,7 @@ package com.emran.MySQLDemo.model;
 }
 <br>-------------------------------<br>
 
-<br>Create repository for user, 
+<br><h3>Create repository for user</h3>
 <br>--- UserRepo ---<br>
 <br>package com.emran.MySQLDemo.repo;
 <br>
@@ -246,7 +246,7 @@ package com.emran.MySQLDemo.model;
 }
 <br>-------------------------------<br>
 
-<br>Create user service interface and user service implementation
+<br><h3>Create user service interface and user service implementation</h3>
 <br>--- UserService ---<br>
 <br>package com.emran.MySQLDemo.service;
 <br>
@@ -328,7 +328,7 @@ package com.emran.MySQLDemo.ctrl;
 <br>-------------------------------<br>
 </p>
 <p>
-- now configure <i>application.yml</i> file
+<h3>now configure</h3> <i>application.yml</i> <h3>file</h3>
 <img src="https://github.com/Emran-Java/SprinMySQLJpa/blob/master/extra_files/Screenshot%20at%202018-11-14%2019-09-00.png" alt="Demo Screenshot 1" style="max-width:100%;"/>
 <br>
 <br>server:
@@ -370,3 +370,5 @@ package com.emran.MySQLDemo.ctrl;
 <br>localhost:9090/demo/user/name@mail.com
 </p>
 </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IcMvhLpx60o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
