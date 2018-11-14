@@ -338,6 +338,7 @@ public class UserCtrl {
 </p>
 <p>
 - now configure <i>application.yml</i> file
+<img src="https://github.com/Emran-Java/SprinMySQLJpa/blob/master/extra_files/Screenshot%20at%202018-11-14%2019-09-00.png" alt="Demo Screenshot 1" style="max-width:100%;"/>
 <br>
 <br>server:
   <br>port: 9090
