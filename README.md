@@ -373,5 +373,6 @@ package com.emran.MySQLDemo.ctrl;
 
 <h3>Related tutorial:</h3>
 ----------------------
-Spring Boot MySQL database connect by JPA with hibernate
-https://youtu.be/ogbM5F0dKXk
+<br>Spring Boot MySQL database connect by JPA with hibernate
+<br>https://youtu.be/ogbM5F0dKXk
+<br>
