@@ -18,8 +18,9 @@
   <img src="https://github.com/Emran-Java/SprinMySQLJpa/blob/master/extra_files/Screenshot%20at%202018-11-14%2016-59-30.png" alt="Demo Screenshot 1" style="max-width:100%;"/>
 <br>
 <p>
-- set packages as component and entityScan by annotation in main class
-<br>
+	
+<br> <h3>- set packages as component and entityScan by annotation in main class</h3>
+<br>--- SpringMySQLJpaApplication---<br>
 package com.emran.MySQLDemo.config;
 <br>
 <br>import org.springframework.boot.SpringApplication;
@@ -41,9 +42,9 @@ package com.emran.MySQLDemo.config;
 
 	}
 }
+<br>-------------------------------<br>
 
-- Now create model with table colomun and other annotation in model package.
-<br>
+<br>- Now create model with table colomun and other annotation in model package.
 <br>--- BaseModel.java ---<br>
 package com.emran.MySQLDemo.model;
 <br>
@@ -58,7 +59,6 @@ package com.emran.MySQLDemo.model;
 <br>@Id
 <br>@Column(name="ID", unique = true)
     <br>private Integer id;
-
 
     //Default constructor
     public BaseModel(){
@@ -78,8 +78,8 @@ package com.emran.MySQLDemo.model;
         return id.toString();
     }
 }
-
 <br>-------------------------------<br>
+
 <br> Add a enum file for gender
 <br>--- GenderEnm.java ---<br>
 <br>package com.emran.MySQLDemo.model;
@@ -87,12 +87,9 @@ package com.emran.MySQLDemo.model;
 <br>public enum GenderEnm {
 <br>    MALE, FEMALE, OTHER
 <br>}
-
 <br>-------------------------------<br>
 
-
 <br>--- Human.java ---<br>
-
 <br>package com.emran.MySQLDemo.model;
 <br>
 <br>import javax.persistence.Column;
@@ -174,7 +171,6 @@ package com.emran.MySQLDemo.model;
 <br>-------------------------------<br>
 
 <br>--- User.java ---<br>
-
 <br>package com.emran.MySQLDemo.model;
 <br>
 <br>import javax.persistence.Column;
@@ -230,7 +226,6 @@ package com.emran.MySQLDemo.model;
                 '}'+""+super.toString();
     }
 }
-
 <br>-------------------------------<br>
 
 <br>Create repository for user, 
@@ -265,8 +260,7 @@ package com.emran.MySQLDemo.model;
 
     User findUserByEmail(String email);
 }
- 
-<br>-------------------------------<br>
+ <br>-------------------------------<br>
 
 <br>--- UserServiceImpl ---<br>
 <br>package com.emran.MySQLDemo.service;
@@ -297,10 +291,9 @@ package com.emran.MySQLDemo.model;
 
 <br>-------------------------------<br>
 
-<br>Create controllare for user model, user controllare use for user table and user service. 
+<br><h3>Create controllare for user model, user controllare use for user table and user service. </h3>
 <br>--- UserCtrl ---<br>
 package com.emran.MySQLDemo.ctrl;
-
 <br>import com.emran.MySQLDemo.model.User;
 <br>import com.emran.MySQLDemo.service.UserService;
 <br>import org.springframework.beans.factory.annotation.Autowired;
