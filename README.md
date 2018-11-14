@@ -339,28 +339,28 @@ public class UserCtrl {
 <p>
 - now configure <i>application.yml</i> file
 <br>
-server:
-  port: 9090
-  servlet:
-    context-path: /demo
-
-spring:
-  jpa:
-    generate-ddl: true
-    show-sql: true
-    hibernate:
-      show-sql: true
-      ddl-auto: update
-      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    properties:
-      hibernate:
-        default_schema: app
-        id.new_generator_mappings: true
-        dialect: org.hibernate.dialect.MySQL5Dialect
-  datasource:
-    url: jdbc:mysql://localhost:3306/bd_spring_demo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password:
+<br>server:
+  <br>port: 9090
+  <br>servlet:
+    <br>context-path: /demo
+<br>
+<br>spring:
+  <br>jpa:
+    <br>generate-ddl: true
+    <br>show-sql: true
+    <br>hibernate:
+      <br>show-sql: true
+      <br>ddl-auto: update
+      <br>naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    <br>properties:
+      <br>hibernate:
+        <br>default_schema: app
+        <br>id.new_generator_mappings: true
+        <br>dialect: org.hibernate.dialect.MySQL5Dialect
+  <br>datasource:
+    <br>url: jdbc:mysql://localhost:3306/bd_spring_demo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    <br>username: root
+    <br>password:
 </p>
 <p>
 - In UserCtrl.java file
