@@ -372,4 +372,10 @@ public class UserCtrl {
 <br>Use userByEmail() function by url: localhost:9090/demo/user/name@mail.com
 <br>to get single user information by email
 <br>database name: bd_spring_demo
+<p>
+- Noe run this project and browse 
+<br>localhost:9090/demo/user
+<br>and
+<br>localhost:9090/demo/user/name@mail.com
+</p>
 </p>
