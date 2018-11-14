@@ -1,6 +1,5 @@
 package com.emran.MySQLDemo.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;

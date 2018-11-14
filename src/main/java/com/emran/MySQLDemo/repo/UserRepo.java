@@ -11,6 +11,4 @@ public interface UserRepo extends JpaRepository<User,Integer> {
 
     List<User> findAll();
 
-//    @Query("select a from User a where ( :srchStr is null or lower(a.name) like lower(CONCAT('%',:srchStr,'%')) )")
-//    List<User> findCustomeee(@Param("srchStr") String co);
 }

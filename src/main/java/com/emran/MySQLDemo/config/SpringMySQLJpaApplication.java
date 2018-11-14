@@ -17,6 +17,6 @@ public class SpringMySQLJpaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringMySQLJpaApplication.class, args);
 
-
 	}
 }
+

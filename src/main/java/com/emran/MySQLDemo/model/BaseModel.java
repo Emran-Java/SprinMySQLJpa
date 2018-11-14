@@ -1,9 +1,7 @@
+
 package com.emran.MySQLDemo.model;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
@@ -35,3 +33,5 @@ public class BaseModel implements Serializable {
         return id.toString();
     }
 }
+
+
