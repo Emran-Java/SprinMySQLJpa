@@ -296,23 +296,22 @@ package com.emran.MySQLDemo.model;
 }
 
 <br>-------------------------------<br>
-<br>Create controllare for user model, user controllare use for user table and user service. 
 
+<br>Create controllare for user model, user controllare use for user table and user service. 
 <br>--- UserCtrl ---<br>
 package com.emran.MySQLDemo.ctrl;
 
-
-import com.emran.MySQLDemo.model.User;
-import com.emran.MySQLDemo.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-
-@RestController
-public class UserCtrl {
+<br>import com.emran.MySQLDemo.model.User;
+<br>import com.emran.MySQLDemo.service.UserService;
+<br>import org.springframework.beans.factory.annotation.Autowired;
+<br>import org.springframework.web.bind.annotation.GetMapping;
+<br>import org.springframework.web.bind.annotation.PathVariable;
+<br>import org.springframework.web.bind.annotation.RestController;
+<br>
+<br>import java.util.List;
+<br>
+<br>@RestController
+<br>public class UserCtrl {
 
     @Autowired
     UserService userService;
@@ -334,7 +333,6 @@ public class UserCtrl {
     }
 }
 <br>-------------------------------<br>
-
 </p>
 <p>
 - now configure <i>application.yml</i> file
