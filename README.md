@@ -233,45 +233,6 @@ package com.emran.MySQLDemo.model;
 
 <br>-------------------------------<br>
 
-<br>Create controllare for user model, user controllare use for user table and user service. 
-
-<br>--- UserCtrl ---<br>
-package com.emran.MySQLDemo.ctrl;
-
-
-import com.emran.MySQLDemo.model.User;
-import com.emran.MySQLDemo.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-
-@RestController
-public class UserCtrl {
-
-    @Autowired
-    UserService userService;
-
-    @GetMapping(value = "/user")
-    public String userAll(){
-
-        List<User> users = userService.findAll();
-
-        return ""+users;
-    }
-
-    @GetMapping(value = "/user/{email}")
-    public String userByEmail(@PathVariable String email){
-
-        User user = userService.findUserByEmail(email);
-
-        return ""+user;
-    }
-}
-<br>-------------------------------<br>
-
 <br>Create repository for user, 
 <br>--- UserRepo ---<br>
 <br>package com.emran.MySQLDemo.repo;
@@ -335,6 +296,45 @@ public class UserCtrl {
 }
 
 <br>-------------------------------<br>
+<br>Create controllare for user model, user controllare use for user table and user service. 
+
+<br>--- UserCtrl ---<br>
+package com.emran.MySQLDemo.ctrl;
+
+
+import com.emran.MySQLDemo.model.User;
+import com.emran.MySQLDemo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class UserCtrl {
+
+    @Autowired
+    UserService userService;
+
+    @GetMapping(value = "/user")
+    public String userAll(){
+
+        List<User> users = userService.findAll();
+
+        return ""+users;
+    }
+
+    @GetMapping(value = "/user/{email}")
+    public String userByEmail(@PathVariable String email){
+
+        User user = userService.findUserByEmail(email);
+
+        return ""+user;
+    }
+}
+<br>-------------------------------<br>
+
 </p>
 <p>
 - now configure <i>application.yml</i> file
